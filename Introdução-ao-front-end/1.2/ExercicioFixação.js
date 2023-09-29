@@ -11,6 +11,5 @@ const fetchUsers = () => {
     });
 };
 
-fillUsersSelect = fetchUsers;
+fetchUsers;
 
-fillUsersSelect();

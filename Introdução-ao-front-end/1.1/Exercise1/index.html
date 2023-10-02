@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <h1>Formulário de Validação</h1>
+
+    <form id="validation-form">
+        <label for="input-text">Texto:</label>
+        <input type="text" id="input-text" name="input-text">
+
+        <label for="validation-type">Tipo de Validação:</label>
+        <select id="validation-type" name="validation-type">
+            <option value="email">E-mail</option>
+            <option value="password">Senha</option>
+            <option value="phone">Telefone</option>
+            <option value="creditCard">Cartão de Crédito</option>
+            <option value="date">Data</option>
+        </select>
+
+        <button id="submitButton" type="button">Validar</button>
+    </form>
+
+    <p id="validation-result"></p>
+
+    <script src="./src/main.js" type="module"></script>
+</body>
+</html>
